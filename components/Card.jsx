@@ -1,9 +1,9 @@
-import star from "../images/star.png"
+import star from "../src/star.png"
 
 function Card(props){
     return(
         <div className="card">
-            <img src={props.img} alt="An image of a person" className="person-img"></img>
+            <img src={props.img} alt="" className="person-img"></img>
             <div className="information">
                 <div className="rating">
                     <img src={star}></img>
