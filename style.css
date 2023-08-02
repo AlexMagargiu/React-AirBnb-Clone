@@ -19,7 +19,7 @@ body{
 }
 
 .nav{
-    width: 30vw;
+    width: 35vw;
     padding: 1.5rem;
     background-color: white;
     margin-top: 2rem;
@@ -33,7 +33,7 @@ body{
 }
 
 .delimiter{
-    min-width: 30vw;
+    min-width: 35vw;
     min-height: .75vh;
     background-color: #E5E5E5;
 }
@@ -63,11 +63,14 @@ body{
 }
 
 .card{
-    padding: 0 0 2rem 2rem;
+    padding: 0 0 1.5rem 0;
+    position: relative;
 }
 
 .person-img{
     width: 175px;
+    height: 235px;
+    border-radius: 12px;
 }
 
 .information{
@@ -90,4 +93,21 @@ body{
 
 .gray{
     color: #918E9B;
+}
+
+.offer-div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.badge{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }

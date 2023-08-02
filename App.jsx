@@ -6,12 +6,8 @@ import data from "./components/data";
 function App(){
     const cardElement = data.map(data => {
         return <Card 
-                    img = {data.coverImg}
-                    rating = {data.stats.rating}
-                    reviewCount = {data.stats.reviewCount}
-                    country = {data.location}
-                    title = {data.title}
-                    price = {data.price} 
+                    key = {data.id}
+                    item = {data}
                 />
     }) 
     return(
@@ -19,7 +15,7 @@ function App(){
             <Navbar />
             <div className="delimiter"></div> 
             <Hero />
-            {cardElement}
+            <div className="offer-div">{cardElement}</div>
         </div>
     )
 }
